@@ -1,0 +1,32 @@
+mongo:
+  driver: ""
+  dbname: ""
+  username: ""
+  password: ""
+  host: ""
+  port: ""
+  maxlifetime: 7200
+  maxopenconns: 50
+  minopenconns: 10
+  maxidleconns: 50
+
+server:
+  port: "3333"
+  secret: "jdnfksdmfksda"
+  #release | debug
+  mode: "debug"
+  inctimebkk: 7
+
+api:
+  anotherapi1: ""
+  anotherapi2: ""
+  anotherapi3: ""
+
+app:
+  env: "worker"
+
+s3server:
+  region: ""
+  secret: ""
+  bucket: ""
+  key: ""
