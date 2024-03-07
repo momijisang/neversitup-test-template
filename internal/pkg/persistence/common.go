@@ -92,11 +92,12 @@ func FindStringInArray(findString string, Array []string) bool {
 	return false
 }
 
-func SplitToArrayInt(InputString string) []int64 {
+func SplitToArrayInt(InputString string) []int {
 	sList := strings.Split(InputString, ",")
-	ary := make([]int64, len(sList))
+	ary := make([]int, len(sList))
 	for i, s := range sList {
-		ary[i], _ = strconv.ParseInt(s, 10, 64)
+		x, _ := strconv.ParseInt(s, 10, 64)
+		ary[i] = int(x)
 	}
 	return ary
 }

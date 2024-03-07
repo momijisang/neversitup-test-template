@@ -39,9 +39,12 @@ func Setup() *gin.Engine {
 	v1 := app.Group("api/v1")
 	{
 		v1.GET("/health-check", controllers.HealthCheck)
-		hellow := v1.Group("/hellow")
+		test := v1.Group("/test")
 		{
-			hellow.GET("/neversitup", controllers.HellowNeverSitup)
+			test.GET("/hellow", controllers.Hellow)
+			test.GET("/test2", controllers.Test2)
+			test.GET("/test3", controllers.Test3)
+			test.POST("/test4", controllers.Test4)
 		}
 	}
 
